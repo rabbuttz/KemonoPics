@@ -1,0 +1,13 @@
+version: '3'
+services:
+  twitter-bot:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - API_KEY=${API_KEY}
+      - API_SECRET_KEY=${API_SECRET_KEY}
+      - ACCESS_TOKEN=${ACCESS_TOKEN}
+      - ACCESS_TOKEN_SECRET=${ACCESS_TOKEN_SECRET}
+    env_file:
+      - .env
