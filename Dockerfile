@@ -15,4 +15,4 @@ COPY . .
 EXPOSE 5000
 
 # アプリケーションを起動
-CMD ["python", "your_script.py"]
+CMD ["python", "main.py"]

@@ -3,7 +3,7 @@ services:
   twitter-bot:
     build: .
     ports:
-      - "5000:5000"
+      - "5000:5000"  # ホストマシンの5000番ポートをコンテナの5000番ポートにフォワード
     environment:
       - API_KEY=${API_KEY}
       - API_SECRET_KEY=${API_SECRET_KEY}
